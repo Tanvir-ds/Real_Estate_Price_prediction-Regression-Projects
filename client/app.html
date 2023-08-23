@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Predict House Price</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+    <h1>Predict House Price</h1>
+    <form id="predict-form">
+        <label for="location">Location:</label>
+        <input type="text" id="location" name="location" required><br>
+
+        <label for="total_sqft">Total Sqft:</label>
+        <input type="number" id="total_sqft" name="total_sqft" required><br>
+
+        <label for="bath">Number of Bathrooms:</label>
+        <input type="number" id="bath" name="bath" required><br>
+
+        <label for="bhk">BHK (Bedrooms, Hall, Kitchen):</label>
+        <input type="number" id="bhk" name="bhk" required><br>
+
+        <input type="submit" value="Predict">
+    </form>
+
+    <div id="result"></div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
